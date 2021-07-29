@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dehiwala.zoo">
+    <title>Dehiwala Zoo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style pages/purchase.css">
+    <link rel="stylesheet" href="style pages/favourites.css">
+</head>
+
+<body>
+
+    <body>
+        <div id="container">
+            <header>
+                <h1>DEHIWALA &nbsp; ZOO</h1>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="typesofanimals.html"><span class="navText">Types of animals and plants </span></a></li>
+                    <li><a href="activities.html"><span class="navText">Activities</span></a></li>
+                    <li><a href="purchase.html"><span class="navText">Purchase and donate </span></a></li>
+                    <li><a href="contact.html"><span class="navText">Contact Us </span></a></li>
+                </ul>
+            </nav>
+            <img class="mainImg" src="images/fav.jpg" alt="#"><br>
+
+            <main>
+                <div class="wrapper-link">
+                    <a class="link-view-favourites" href="purchase.html">GO BACK</a>
+                </div>
+
+                <div class="contactgrid-container container-bottom">
+                    <div class="contactgrid-item">
+                        <div class="wrapper-order">
+                            <h2>MY FAVOURITES</h2>
+
+                            <p class="txt-no-orders" id="txtNoOrders">No orders added. Please go back and add some orders to favourites.
+                            </p>
+
+                            <div class="wrapper-order-control" id="favourite_table">
+                                <label>Current Orders(s)</label>
+                                <table>
+                                    <thead>
+                                        <td>Choice of Ticket</td>
+                                        <td>No. of Tickets</td>
+                                        <td>Duration</td>
+                                        <td>Annual Booking</td>
+                                        <td>Food Token</td>
+                                    </thead>
+                                    <tbody id="favourite_tbody">
+                                    </tbody>
+                                </table>
+
+                                <div class="wrapper-total">
+                                    <p class="txt-total">Total : <span id="amount"></span></p>
+                                </div>
+
+                                <button type="button" class="btn-add-to-orders" onclick="onPlaceOrder()">ADD TO
+                                    ORDERS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <nav>
+                    <ul>
+                        <li> All Copyrights to APIIT </li>
+                        <li>Developed by: Mohamed Najman Adhil</li>
+                        <li>0776765905</li>
+                        <li>WDOS1 &amp; CB009322</li>
+                    </ul>
+                </nav>
+            </footer>
+
+            <script src="js/favourites.js"></script>
+    </body>
+
+</html>

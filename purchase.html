@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dehiwala.zoo">
+    <title>Dehiwala Zoo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style pages/purchase.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>DEHIWALA &nbsp; ZOO</h1>
+        </header>
+        <nav class="mainNav">
+            <ul>
+                <li><a href="index.html"><span class="navText">Home</span></a></li>
+                <li><a href="typesofanimals.html"><span class="navText">Types of animals and plants </span></a></li>
+                <li><a href="activities.html"><span class="navText">Activities</span></a></li>
+                <li><a href="purchase.html"><span class="navText">Purchase and donate </span></a></li>
+                <li><a href="contact.html"><span class="navText">Contact Us </span></a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <img class="mainImg" src="images/maxresdefault.jpg" alt="#"><br>
+            <div class="wrapper-link">
+                <a class="link-view-favourites" href="favourites.html">MY FAVOURITES</a>
+                <button type="submit" class="btn-loyality" id="buttonLoyality" onclick="onLoyalityCheck()">CHECK MY
+                    LOYALITY</button>
+                <p class="txt-loyality" id="txtLoyality"></p>
+            </div>
+
+            <div class="contactgrid-container container-top">
+                <div class="contactgrid-item">
+                    <h2>BOOK YOUR TICKETS</h2>
+                    <form action="" method="post" id="form_booking">
+                        <div class="wrapper-form-control">
+                            <label>Choice of Ticket (Required)</label>
+                            <select name="choice" id="booking_choice" required>
+                                <option value="null">Select choice of ticket</option>
+                                <option value="Day Pass">Day Pass</option>
+                                <option value="Student Pass">Student Pass</option>
+                                <option value="Foreigner Pass">Foreigner Pass</option>
+                            </select>
+                            <span class="error" id="error_choice"></span>
+                        </div>
+
+                        <div class="wrapper-form-control wrapper-num-of-tickets">
+                            <label>Number of Tickets (Required)</label>
+                            <input type="number" placeholder="Adults" id="booking_adults">
+                            <input type="number" placeholder="Children" id="booking_children">
+                            <span class="error" id="error_tickets"></span>
+                        </div>
+
+                        <div class="wrapper-form-control">
+                            <label>Duration (Required)</label>
+                            <select id="booking_duration">
+                                <option value="null">Select duration</option>
+                                <option value="3 Hours">3 Hours</option>
+                                <option value="1/2 Day">1/2 Day</option>
+                                <option value="Full Day">Full Day</option>
+                                <option value="2 Days">2 Days</option>
+                            </select>
+                            <span class="error" id="error_duration"></span>
+                        </div>
+
+                        <div class="wrapper-form-control">
+                            <label>Extra (Optional)</label>
+
+                            <div class="wrapper-check">
+                                <label>Annual Pass</label>
+                                <input type="checkbox" id="booking_annual">
+                            </div>
+
+                            <div class="wrapper-check">
+                                <label>Food Token</label>
+                                <input type="checkbox" id="booking_food">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-add-to-orders">ADD TO ORDERS</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contactgrid-container container-bottom">
+                <div class="contactgrid-item">
+                    <div class="wrapper-order">
+                        <h2>ORDERS</h2>
+
+                        <div class="wrapper-order-control" id="orders-table">
+                            <label>Current Orders(s)</label>
+                            <table>
+                                <thead>
+                                    <td>Choice of Ticket</td>
+                                    <td>No. of Tickets</td>
+                                    <td>Duration</td>
+                                    <td>Annual Booking</td>
+                                    <td>Food Token</td>
+                                </thead>
+                                <tbody id="order_tbody">
+                                </tbody>
+                            </table>
+
+                            <div class="wrapper-total">
+                                <p class="txt-total">Total : <span id="amount"></span></p>
+                            </div>
+
+                            <div class="wrapper-buttons">
+                                <button type="button" class="btn-add-to-orders btn-place-orders" onclick="onPlaceOrder()">VIEW OVERALL
+                                    ORDERS</button>
+                                <a class="link-favourite" onclick="onAddToFavourites()">
+                                    <img class="link-favourite" src="images/icon-favourite.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- donation starts -->
+
+            <div class="contactgrid-container container-bottom">
+                <div class="contactgrid-item">
+                    <h2 class="donation-heading"><u>Donation Centre</u>
+                    </h2>
+                    <div class="">
+                        <div class="">
+                            <div class="">
+                                <form>
+
+                                    <div class="dRow">
+                                        <div class="dcol-50">
+                                            <h3 class="donation-heading">Billing Address</h3>
+                                            <br>
+                                            <span class="dspan">Full Name</span> <br>
+                                            <input class="dInput" type="text" id="fname" name="firstname" placeholder="Enter your name" required><br>
+                                            <span class="dspan">Email Address :</span> <br>
+                                            <input class="dInput" type="text" id="emailAddress" name="emailAddress" placeholder="Enter your emailAddress" required>
+
+                                            <div class="dRow">
+                                                <div class="dcol-50">
+                                                    <span class="dspan">District :</span> <br>
+                                                    <input class="dInput" type="text" id="district" name="district" placeholder="Colombo" required>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="dcol-50">
+                                            <h3 class="donation-heading">Payment Details</h3>
+                                            <br>
+
+                                            <span>Card Holder's Name :</span> <br>
+                                            <input class="dInput" type="text" id="cardHolderName" name="cardname" placeholder="Name of the card holder name" required><br>
+
+                                            <span>Credit / Debit Card Number :</span> <br>
+                                            <input class="dInput" type="text" id="ccNumber" name="cardnumber" placeholder="0000-1111-2222-3333" maxlength="16" required>
+
+                                            <div class="dRow">
+                                                <div class="row1">
+                                                    <span>Expiry Month :</span> <br>
+                                                    <input class="dInput" type="text" id="expMonth" name="expMonth" placeholder="month" maxlength="2" required>
+                                                </div>
+
+                                                <div class="row1">
+                                                    <span>Expiry Year :</span> <br>
+                                                    <input class="dInput" type="text" id="expYear" name="expYear" placeholder="year" maxlength="4" required>
+                                                </div>
+
+                                                <div class="row1">
+                                                    <span>CVV :</span><br>
+                                                    <input class="dInput" type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+                                                </div> <br>
+                                                <div class="dcol-50">
+                                                    <label for="PaymentAmount">Payment amount</label>
+                                                    <select name="donateAmount" id="dAmt" required>
+                                                        <option value=""> Click to select amount</option>
+                                                        <option value="100">100</option>
+                                                        <option value="100">250</option>
+                                                        <option value="100">500</option>
+                                                        <option value="100">1000</option>
+                                                        <option value="100">2500</option>
+                                                        <option value="100">5000</option>
+                                                        <option value="100">10,0000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                </form>
+                                <button id="PayButton" class="btnDonate" onclick="donate()">
+                                            <span class="btn-add-to-orders btn-place-orders">Donate</span>
+                                            </button>
+
+
+
+
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>All Copyrights to APIIT</li>
+                    <li>Developed by: Mohamed Najman Adhil</li>
+                    <li>0776765905</li>
+                    <li>WDOS1 &amp; CB009322</li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="js/purchase.js"></script>
+</body>
+
+</html>

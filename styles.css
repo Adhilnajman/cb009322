@@ -1,0 +1,370 @@
+                                         @media only screen and (max-width:800px) {
+                                             /* For tablets: */
+                                             .main {
+                                                 width: 80%;
+                                                 padding: 0;
+                                             }
+                                             .right {
+                                                 width: 100%;
+                                             }
+                                         }
+                                         
+                                         @media only screen and (max-width:500px) {
+                                             /* For mobile phones: */
+                                             .menu,
+                                             .main,
+                                             .right {
+                                                 width: 100%;
+                                             }
+                                         }
+                                         
+                                         header,
+                                         footer {
+                                             background: rgb(2, 108, 0);
+                                             padding: 1em;
+                                             color: white;
+                                             text-align: center;
+                                         }
+                                         
+                                         h1 {
+                                             font-size: 1.8em;
+                                             text-align: center;
+                                             color: white;
+                                         }
+                                         
+                                         #container {
+                                             min-width: auto;
+                                             max-width: auto;
+                                             width: 90%;
+                                             margin: 0 auto;
+                                             background: #bfe2b1;
+                                         }
+                                         
+                                         .mainNav {
+                                             position: none;
+                                             top: 0;
+                                         }
+                                         
+                                         .mainNav ul {
+                                             list-style-type: none;
+                                             display: flex;
+                                             background-color: #a0c5b3;
+                                             flex-flow: row wrap;
+                                         }
+                                         
+                                         .mainNav li {
+                                             flex-grow: 1;
+                                             width: calc(25% -.2em);
+                                             border: 1em rgb#070e0a solid;
+                                         }
+                                         
+                                         .navText {
+                                             padding-left: 60px;
+                                         }
+                                         
+                                         .mainNav a {
+                                             background-repeat: no-repeat;
+                                             background-size: 40px auto;
+                                             background-position: .5em center;
+                                             min-height: 50px;
+                                             line-height: 50px;
+                                             text-decoration: none;
+                                             display: block;
+                                             color: rgb(17, 17, 17);
+                                         }
+                                         
+                                         .mainNav a:hover {
+                                             background-color: rgba(165, 240, 158, 0.8);
+                                         }
+                                         
+                                         .mainImg {
+                                             width: 100%;
+                                             height: 500px;
+                                         }
+                                         
+                                         .marquee {
+                                             background-color: rgba(43, 145, 34, 0.8);
+                                             font-size: 18px;
+                                             color: indigo;
+                                             padding: auto;
+                                         }
+                                         
+                                         #covidimg {
+                                             width: 50%;
+                                             height: 270px;
+                                         }
+                                         
+                                         footer ul {
+                                             list-style-type: none;
+                                             padding: 0;
+                                             margin: 0;
+                                         }
+                                         
+                                         footer a {
+                                             text-decoration: none;
+                                             color: #252423;
+                                             line-height: 40px;
+                                         }
+                                         
+                                         footer a:hover {
+                                             text-decoration: underline;
+                                             color: #ff7b00;
+                                         }
+                                         /* home page body container */
+                                         
+                                         img {
+                                             width: 100%;
+                                             height: auto;
+                                             display: block;
+                                             padding: 0;
+                                             margin: 0 auto;
+                                         }
+                                         
+                                         .grid-container {
+                                             display: grid;
+                                             grid-template-columns: auto auto;
+                                             padding: 40px;
+                                             margin-inline-start: center;
+                                         }
+                                         
+                                         .grid-item {
+                                             background-color: rgba(165, 240, 158, 0.8);
+                                             border: 10px solid rgba(255, 255, 255, 0.8);
+                                             padding: 15px;
+                                             font-size: 20px;
+                                             text-align: left;
+                                         }
+                                         
+                                         .row {
+                                             background-color: #77cca1;
+                                         }
+                                         /*  Typesofanimals page  */
+                                         
+                                         .typeimg {
+                                             width: 100%;
+                                             height: 250px;
+                                             display: block;
+                                             padding: 0;
+                                             margin: 0 auto;
+                                         }
+                                         
+                                         .typeimg:hover {
+                                             transform: scaleY(1.8);
+                                         }
+                                         
+                                         .activityimg {
+                                             width: 100%;
+                                             height: 450px;
+                                             display: block;
+                                             padding: 0;
+                                             margin: 0 auto;
+                                         }
+                                         
+                                         #newsContainer {
+                                             display: flex;
+                                             flex-flow: row wrap;
+                                             justify-content: space-between;
+                                         }
+                                         
+                                         #newsContainer .container {
+                                             margin: .8em .2em;
+                                             width: calc(33% - .4em);
+                                             box-sizing: border-box;
+                                             box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+                                             background-color: rgba(255, 224, 179, 0.2);
+                                         }
+                                         
+                                         #newsContainer h3,
+                                         #newsContainer p {
+                                             width: 90%;
+                                             padding: 0;
+                                             margin: 1em auto;
+                                         }
+                                         
+                                         .div.c {
+                                             transform: scaleY(1.5);
+                                         }
+                                         /* table style  */
+                                         
+                                         #customers {
+                                             font-family: Arial, Helvetica, sans-serif;
+                                             width: 100%;
+                                             margin: .8em .2em;
+                                             box-sizing: border-box;
+                                             box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+                                             background-color: rgba(255, 224, 179, 0.2);
+                                         }
+                                         
+                                         #customers td,
+                                         #customers th {
+                                             border: 3px solid rgb(7, 6, 6);
+                                             padding: 12px;
+                                         }
+                                         
+                                         #customers tr:nth-child(even) {
+                                             background-color: #f2f2f2;
+                                         }
+                                         
+                                         #customers tr:hover {
+                                             background-color: #ddd;
+                                         }
+                                         
+                                         #customers th {
+                                             padding-top: 12px;
+                                             padding-bottom: 12px;
+                                             text-align: left;
+                                             background-color: #4CAF50;
+                                             color: white;
+                                         }
+                                         /*  activities page */
+                                         
+                                         h2 {
+                                             font-family: Arial, Helvetica, sans-serif, ;
+                                             color: black;
+                                             text-align: center;
+                                         }
+                                         
+                                         .activitycontainer {
+                                             align-items: center;
+                                             background: rgb(173, 230, 121);
+                                             margin: 30px 100px 30px 100px;
+                                             border: 3px solid black;
+                                             transition: transform 1s ease-in;
+                                             font-size: 20px;
+                                         }
+                                         
+                                         p,
+                                         h3 {
+                                             color: black;
+                                             box-align: justify;
+                                         }
+                                         
+                                         section {
+                                             background-color: rgb(173, 230, 121);
+                                             border: 3px solid black;
+                                             margin: 5px;
+                                             padding: 1em;
+                                             color: rgb(255, 255, 255);
+                                         }
+                                         /* contact page */
+                                         
+                                         .contactgrid-container {
+                                             display: grid;
+                                             grid-template-columns: auto;
+                                             padding: 40px;
+                                             margin-inline-start: center;
+                                         }
+                                         
+                                         .contactgrid-item {
+                                             background-color: rgba(165, 240, 158, 0.8);
+                                             border: 10px solid rgba(255, 255, 255, 0.8);
+                                             padding: 15px;
+                                             font-size: 20px;
+                                             text-align: left;
+                                         }
+                                         /* mobile grid view */
+                                         
+                                         @media only screen and (max-width:768px) {
+                                             .grid-container {
+                                                 grid-template-columns: auto;
+                                             }
+                                             #newsContainer .container {
+                                                 width: calc(100% - .4em);
+                                             }
+                                             .typeimg {
+                                                 width: 100%;
+                                                 height: auto;
+                                             }
+                                             #newsContainer {
+                                                 overflow-x: auto;
+                                             }
+                                             input[type=text],
+                                             input[type=email],
+                                             textarea {
+                                                 position: relative;
+                                                 float: left;
+                                                 width: 100%;
+                                             }
+                                         }
+                                         
+                                         .link-favourite {
+                                             width: 5%;
+                                             margin-top: -33px;
+                                         }
+                                         /* donate page */
+                                         
+                                         .donate {
+                                             font-family: Arial;
+                                             font-size: 17px;
+                                             padding: 8px;
+                                             margin-top: -131vh;
+                                             text-align: left;
+                                         }
+                                         
+                                         .dRow {
+                                             display: -ms-flexbox;
+                                             display: flex;
+                                             -ms-flex-wrap: wrap;
+                                             flex-wrap: wrap;
+                                             margin: 0 -16px;
+                                         }
+                                         
+                                         .dcol-50 {
+                                             -ms-flex: 50%;
+                                             flex: 50%;
+                                         }
+                                         
+                                         .dcol-75 {
+                                             -ms-flex: 75%;
+                                             flex: 75%;
+                                         }
+                                         
+                                         .row1,
+                                         .dcol-50,
+                                         .dcol-75 {
+                                             padding: 0 16px;
+                                         }
+                                         
+                                         .dContainer {
+                                             background-color: #f2f2f2;
+                                             padding: 5px 20px 15px 20px;
+                                             border: 1px solid lightgrey;
+                                             border-radius: 3px;
+                                             padding-bottom: 81px;
+                                         }
+                                         
+                                         .dInput[type=text] {
+                                             width: 50%;
+                                             margin-bottom: 20px;
+                                             padding: 12px;
+                                             border: 1px solid #ccc;
+                                             border-radius: 3px;
+                                         }
+                                         
+                                         .dLabel {
+                                             margin-bottom: 10px;
+                                         }
+                                         
+                                         .btnDonate {
+                                             background-color: #1c6c00;
+                                             color: #fff;
+                                             padding: 15px;
+                                             margin: 25px 0;
+                                             float: center;
+                                             border: none;
+                                             width: 50%;
+                                             border-radius: 3px;
+                                             cursor: pointer;
+                                             font-size: 17px;
+                                             float: center;
+                                         }
+                                         
+                                         .dspan {
+                                             text-align: left;
+                                         }
+                                         
+                                         .btnDonate:hover {
+                                             background-color: #fff;
+                                             color: #1c6c00;
+                                             font-weight: 600;
+                                         }
