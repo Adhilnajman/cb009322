@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    min-width: auto;
+    max-width: auto;
+    width: 90%;
+    margin: 0 auto;
+    background: #b040dd;
+}
+
+header,
+footer {
+    padding: 1em;
+    color: rgba(154, 189, 0, 0.63);
+    text-align: center;
+}
+
+footer {
+    background: rgb(84, 12, 99);
+}
+
+.NavBar ul {
+    list-style-type: none;
+    float: right;
+    padding: 50px 5px 10px 5px;
+}
+
+.NavBar a {
+    margin: 0 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.NavBar ul li {
+    display: inline-block;
+}
+
+.NavBar ul li a {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    background-color: #121a09;
+}
+
+.NavBar ul li a:hover {
+    background-color: rgba(43, 53, 143, 0.8);
+    color: black;
+    transition: 0.6s ease;
+}
+
+.head {
+    background-color: rgb(46, 8, 36);
+    padding: 10px 0px 5px 0px;
+}
+
+#style_header {
+    max-width: 100%;
+    padding: 0px 0px 30px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    margin-inline-start: auto;
+}
+
+.grid-item {
+    background-color: rgba(181, 153, 184, 0.8);
+    border: 10px solid rgba(141, 91, 143, 0.8);
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.seccontainer {
+    align-items: center;
+    background: rgba(233, 76, 180, 0.8);
+    color: black;
+    margin: 30px 100px 30px 100px;
+    position: relative;
+    transition: transform 1s ease-in;
+    font-size: 20px;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateY(0);
+    }
+    22% {
+        transform: translateX();
+    }
+    55% {
+        transform: translateY() translateX();
+    }
+}
+
+#divcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+#styleimage {
+    width: 500px;
+    min-width: 200px;
+    margin: auto;
+    border-radius: 75%;
+    transition: transform 0.5s linear;
+}
+
+#styleimage:hover {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+}

@@ -1,0 +1,18 @@
+.container-bottom {
+    padding-top: 20px;
+}
+
+.wrapper-order-control {
+    display: block;
+}
+
+.txt-no-orders {
+    text-align: center;
+    color: red;
+}
+
+.txt-success {
+    text-align: center;
+    color: #1c6c00;
+    display: none;
+}

@@ -1,0 +1,188 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container {
+            min-width: auto;
+            max-width: auto;
+            width: 90%;
+            margin: 0 auto;
+            background: #f08553;
+        }
+        
+        header,
+        footer {
+            padding: 1em;
+            color: rgb(57, 66, 7);
+            text-align: center;
+        }
+        
+        footer {
+            background: rgb(196, 38, 17);
+        }
+        
+        .NavBar ul {
+            list-style-type: none;
+            float: right;
+            padding: 50px 5px 10px 5px;
+        }
+        
+        .NavBar a {
+            margin: 0 5px 5px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .NavBar ul li {
+            display: inline-block;
+        }
+        
+        .NavBar ul li a {
+            text-decoration: none;
+            padding: 10px 20px 10px 20px;
+            border: 1px solid rgb(207, 76, 76);
+            color: black;
+            background-color: #fff34f;
+        }
+        
+        .NavBar ul li a:hover {
+            background-color: rgba(58, 54, 33, 0.8);
+            color: black;
+            transition: 0.6s ease;
+        }
+        
+        .head {
+            background: rgb(196, 63, 46);
+            padding: 10px 0px 5px 0px;
+        }
+        
+        #stylepage_header {
+            max-width: 100%;
+            padding: 0px 0px 30px 0px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 40px;
+            margin-inline-start: auto;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 208, 53, 0.8);
+            border: 10px solid rgba(204, 195, 112, 0.8);
+            padding: 15px;
+            font-size: 20px;
+            text-align: left;
+        }
+        
+        .style_header {
+            align-items: center;
+            background: rgba(245, 173, 19, 0.61);
+            color: black;
+            margin: 30px 100px 30px 100px;
+            position: relative;
+            transition: transform 1s ease-in;
+            font-size: 20px;
+        }
+        
+        @keyframes left-to-right {
+            0% {
+                transform: translateY();
+            }
+            22% {
+                transform: translateX();
+            }
+            55% {
+                transform: translateY() translateX();
+            }
+        }
+        
+        #seccontainer {
+            padding: 20px 150px 20px 150px;
+            box-sizing: border-box;
+            border-radius: 50px;
+            margin: 30px;
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(251, 134, 0, 0.452);
+            color: black;
+            font-weight: bold;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        p {
+            font-size: 20px;
+            color: rgb(120, 125, 196);
+            text-align: left;
+        }
+        
+        h2 {
+            font-size: 50px;
+            color: rgb(25, 33, 143);
+            text-align: left;
+        }
+        
+        li {
+            color: rgb(25, 33, 143);
+            text-align: left;
+        }
+        
+        #parrotimage {
+            width: 500px;
+            min-width: 200px;
+            margin: 2em;
+            transition: transform 0.5s linear;
+        }
+        
+        #parrotimage:hover {
+            transform: translateX(70%);
+        }
+        
+        #p1 {
+            color: rgb(255, 230, 0);
+            background-image: url(images/parrot11.jpeg);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        #p2 {
+            color: rgb(255, 230, 0);
+            background-image: url(images/parrot22.jpeg), ;
+            background-position: center bottom, left top;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        #p3 {
+            color: rgb(255, 230, 0);
+            background-image: url(images/parrot33.jpeg);
+            background-position: center bottom, right bottom, left top;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        #p4 {
+            color: rgb(255, 230, 0);
+            background: url(images/parrot44.jpeg) center bottom no-repeat, rgb(212, 130, 130) url(images/parrot44.jpeg) left top no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        #container2 {
+            width: 80%;
+            margin: 2em auto;
+            padding: 1em;
+            background: rgba(59, 51, 12, 0.8);
+            box-shadow: 0 0 20px rgb(112, 27, 27);
+        }
+        
+        .myP {
+            height: 180px;
+            margin: 2em;
+            padding: 2em;
+            font-size: 2em;
+            border: 2em dotted #BEBDBD;
+            background: url(images/parrot22.jpeg) rgb(228, 141, 141) no-repeat;
+        }
